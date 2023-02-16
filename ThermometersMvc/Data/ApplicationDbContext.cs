@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ThermometersMvc.Models;
 
 namespace ThermometersMvc.Data
 {
@@ -12,5 +13,6 @@ namespace ThermometersMvc.Data
             : base(options)
         {
         }
+        public DbSet<ThermometersMvc.Models.Thermometers> Thermometers { get; set; }
     }
 }
