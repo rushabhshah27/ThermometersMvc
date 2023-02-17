@@ -12,5 +12,6 @@ namespace ThermometersMvc.Models
         public string Accuracy { get; set; }
         public decimal Price { get; set; }
         public string Display { get; set; }
+        public string Rating { get; set; }
     }
 }

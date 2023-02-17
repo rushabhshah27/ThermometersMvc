@@ -86,7 +86,7 @@ namespace ThermometersMvc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,TypeOfThermometer,TemperatureRange,ProbeType,Accuracy,Price,Display")] Thermometers thermometers)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,TypeOfThermometer,TemperatureRange,ProbeType,Accuracy,Price,Display, Rating")] Thermometers thermometers)
         {
             if (id != thermometers.Id)
             {
